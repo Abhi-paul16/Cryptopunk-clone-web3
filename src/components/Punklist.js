@@ -1,19 +1,21 @@
 import React from 'react'
 import CollectionCard from './CollectionCard'
-export default function Punklist({punkListData}) {
+
+import './Punklist.css';
+
+export default function Punklist({punkListData , setSelectedPunk}) {
     return (
-        <div className='punkList'>
+        <div className='punklist'>
             {punkListData.map(punk=>(
                 
-                <div>
+                <div onClick={()=>{setSelectedPunk(punk.token_id)}}>
                     <CollectionCard
-                     key={punk.id}
+                     key={punk.token_id}
                      id={punk.token_id}
                      name={punk.name}
-                     triats={punk.triats}
+                     traits={punk.traits}
                      image={punk.image_original_url}
                     />
-{console.log(punk)}
                 </div>
             ))}
         </div>

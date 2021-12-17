@@ -1,9 +1,9 @@
 import React from 'react'
 import weth from "../assets/weth.png"
 import "./CollectionCard.css"
-export default function CollectionCard({name, id , triats , image , key  }) {
+export default function CollectionCard({name, id , traits , image  }) {
     return (
-     <div key ={key } className='collectionCard'>
+     <div className='collectionCard'>
             <img src={image} alt="" />
         <div className="details">
             <div className="name">
@@ -13,7 +13,7 @@ export default function CollectionCard({name, id , triats , image , key  }) {
             <div className="priceContainer">
                 <img src={weth} className='wethImage' alt="" />
                 <div className="price">
-                    {triats[0]?.value}
+                    {traits[0]?.value}
                 </div>
             </div>
          </div>
