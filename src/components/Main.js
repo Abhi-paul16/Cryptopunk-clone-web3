@@ -1,4 +1,14 @@
-import React, { useState , useEffect } from 'react'
+import React, { useState , useEffect } from 'react';
+
+//css
+import "./Main.css"
+
+import instagramLogo from "../assets/owner/instagram.png";
+import twitterLogo from "../assets/owner/twitter.png";
+import moreLogo from "../assets/owner/more.png";
+
+
+
 
 export default function Main({punkListData , selectedPunk}) {
 
@@ -12,11 +22,42 @@ export default function Main({punkListData , selectedPunk}) {
     }, [selectedPunk , punkListData])
 
     return (
-      
-     
-        <div>
+        
             <div className="main">
-                <div className="maincontent">
+                        <div className="punkContainer">
+                            <img className='SelectedPunk' src={activepunk.image_original_url} alt="" />
+                        </div>
+                        <div className="punkDetails">
+                            <div className="title">
+                                {activepunk.name}  <span className='itemNumber' >.#{activepunk.token_id}</span>
+                            </div>
+                           
+                            <div className="ownerImageController">
+                              <img className='owner-logo' src={'https://avatars.githubusercontent.com/u/68468264?v=4'} alt="" />
+                              <div className="OwnerDetails">
+                              <div className="ownerNameandHandle">
+                                  <div>Frontend Developer|| Youtuber</div>
+                                  <div className="ownerHandle"> @Abhi-paul16 </div>
+                              </div>
+                        </div>
+                          </div>
+                      
+                        </div>
+                
+                        <div className="ownerlogo">
+                              <div className="ownerlink">
+                                  <img className='logo' src={instagramLogo} alt="" />
+                              </div>
+                              <div className="ownerlink">
+                                  <img className='logo' src={twitterLogo} alt="" />
+                              </div>
+                              <div className="ownerlink ">
+                                  <img className='logo' src={moreLogo} alt="" />
+                              </div>
+                        </div>
+                            
+
+                {/* <div className="maincontent">
                     <div className="punkHighlight">
                         <div className="punkContainer">
                             <img className='SelectedPunk' src={activepunk.image_original_url} alt="" />
@@ -35,17 +76,23 @@ export default function Main({punkListData , selectedPunk}) {
                           <div className="OwnerDetails">
                               <div className="ownerNameandHandle">
                                   <div>ahfiwauiqe7323424j28d</div>
-                                  <div className="ownerHandle">
-                                      @Abhi-paul16
-                                  </div>
-
+                                  <div className="ownerHandle"> @Abhi-paul16 </div>
+                              </div>
+                              <div className="ownerlink">
+                                  <img src={instagramLogo} alt="" />
+                              </div>
+                              <div className="ownerlink">
+                                  <img src={twitterLogo} alt="" />
+                              </div>
+                              <div className="ownerlink">
+                                  <img src={moreLogo} alt="" />
                               </div>
                           </div>
                       </div>
 
                     </div>
-                </div>
+                </div> */}
             </div>
-        </div>
+
     )
 }
