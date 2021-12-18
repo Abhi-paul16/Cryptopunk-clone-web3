@@ -46,52 +46,15 @@ export default function Main({punkListData , selectedPunk}) {
                 
                         <div className="ownerlogo">
                               <div className="ownerlink">
-                                  <img className='logo' src={instagramLogo} alt="" />
+                                  <img className='logo' src={instagramLogo} alt="Instagram Logo" />
                               </div>
                               <div className="ownerlink">
-                                  <img className='logo' src={twitterLogo} alt="" />
+                                  <img className='logo' src={twitterLogo} alt="Twitter" />
                               </div>
                               <div className="ownerlink ">
-                                  <img className='logo' src={moreLogo} alt="" />
+                                  <img className='logo' src={moreLogo} alt="More-logo" />
                               </div>
                         </div>
-                            
-
-                {/* <div className="maincontent">
-                    <div className="punkHighlight">
-                        <div className="punkContainer">
-                            <img className='SelectedPunk' src={activepunk.image_original_url} alt="" />
-                        </div>
-                        <div className="punkDetails">
-                            <div className="title">
-                                {activepunk.name}
-                            </div>
-                            <span className='itemNumber' >.#{activepunk.token_id}</span>
-                        </div>
-
-                      <div className="Owner">
-                          <div className="ownerImageController">
-                              <img src={'https://avatars.githubusercontent.com/u/68468264?v=4'} alt="" />
-                          </div>
-                          <div className="OwnerDetails">
-                              <div className="ownerNameandHandle">
-                                  <div>ahfiwauiqe7323424j28d</div>
-                                  <div className="ownerHandle"> @Abhi-paul16 </div>
-                              </div>
-                              <div className="ownerlink">
-                                  <img src={instagramLogo} alt="" />
-                              </div>
-                              <div className="ownerlink">
-                                  <img src={twitterLogo} alt="" />
-                              </div>
-                              <div className="ownerlink">
-                                  <img src={moreLogo} alt="" />
-                              </div>
-                          </div>
-                      </div>
-
-                    </div>
-                </div> */}
             </div>
 
     )
